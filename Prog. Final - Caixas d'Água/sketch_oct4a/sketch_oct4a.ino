@@ -39,7 +39,7 @@ WebServer server(80);                                        // Porta padrão do
 LiquidCrystal_I2C lcd(0x27,16,2); 
 
 //Variáveis Globais e Definições ---------------------------------------------------------------------
-uint8_t LED1pin = 35;                                         // Pino do led do Botão
+uint8_t LED1pin = 1;                                         // Pino do led do Botão
 bool LED1status = LOW;                                        // Estado inicial do led
 //Sensor ultrassonico 1
 Ultrasonic ultrasonic_1(23, 33);
@@ -312,9 +312,9 @@ String SendHTML(uint8_t led1stat,int distance_1,int distance_2,int distance_3){
     ptr +="<distance>" + String(val3) + " %</h2>\n";
    ptr +="</div>\n";
    if(led1stat)
-  {ptr +="<div class=\"button-container\"><p>Circuito lampadas (1) <br> Status : ON</p><a class=\"button button-off\" href=\"/led1off\">OFF</a></div>\n";}
+  {ptr +="<div class=\"button-container\"><p>Circuito (1) <br> Status : ON</p><a class=\"button button-off\" href=\"/led1off\">OFF</a></div>\n";}
   else
-  {ptr +="<div class=\"button-container\"><p>Circuito lampadas (1) <br> Status : OFF</p><a class=\"button button-on\" href=\"/led1on\">ON</a></div>\n";}
+  {ptr +="<div class=\"button-container\"><p>Circuito (1) <br> Status : OFF</p><a class=\"button button-on\" href=\"/led1on\">ON</a></div>\n";}
 
   ptr +="</div>\n";
   ptr +="</body>\n";
