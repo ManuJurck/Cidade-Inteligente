@@ -250,7 +250,7 @@ String SendHTML(uint8_t led1stat,int distance_1,int distance_2,int distance_3){
  //uint8_t - é usado para variaveis que são lidadas apenas como 0 e 1. Float - variavel para numeros com virgula
   String ptr = "<!DOCTYPE html> <html>\n";// indicar que o código a seguir será do tipo HTML
   ptr +="<head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=no\">\n";
-  // ptr += "<meta http-equiv=\"refresh\" content=\"2\">\n";//atualiza a pagina web de dois em dois segundos
+  ptr += "<meta http-equiv=\"refresh\" content=\"2\">\n";//atualiza a pagina web de dois em dois segundos
   ptr +="<link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,400,600\" rel=\"stylesheet\">\n";
   ptr +="<title>ManuJURCK</title>\n";
   ptr +="<style>html { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}\n";
