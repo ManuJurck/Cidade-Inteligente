@@ -47,7 +47,7 @@ int distance_1;
 int val_1;
 int val1;
 //Sensor ultrassonico 2
-Ultrasonic ultrasonic_2(3, 19);
+Ultrasonic ultrasonic_2(32, 19);
 int distance_2;
 int val_2;
 int val2;
@@ -181,7 +181,7 @@ void loop() {
   if (distance_1 <= 3){
     digitalWrite(rele_1, 1);
     lcd.setCursor(0,0);
-    lcd.print("     ");}
+    lcd.print("B1 OFF");}
   // Atuação bomba 2
      if (distance_2 > 8){
     digitalWrite(rele_2, 0);
@@ -192,7 +192,7 @@ void loop() {
   if (distance_2 <= 3){
     digitalWrite(rele_2, 1);
     lcd.setCursor(7,1);
-    lcd.print("     ");
+    lcd.print("B2 OFF");
     }
   // Atuação bomba 3
   if (distance_3 > 8){
@@ -204,7 +204,7 @@ void loop() {
   if (distance_3 <= 3){
     digitalWrite(rele_3, 1);
     lcd.setCursor(0,1);
-    lcd.print("     ");}
+    lcd.print("B3 OFF");}
 }
 
 //Config WiFi ----------------------------------------------------------------------------------------
