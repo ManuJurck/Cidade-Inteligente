@@ -175,7 +175,7 @@ void loop() {
    if (distance_1 > 8){
     digitalWrite(rele_1, 0);  
     lcd.setCursor(0,0);
-    lcd.print("B1 ON");
+    lcd.print("B1 ON ");
    // SerialBT.print("Bomba_1_ON");
    }
   if (distance_1 <= 3){
@@ -186,7 +186,7 @@ void loop() {
      if (distance_2 > 8){
     digitalWrite(rele_2, 0);
     lcd.setCursor(7,1);
-    lcd.print("B2 ON");
+    lcd.print("B2 ON ");
   //  SerialBT.print("Bomba_2_ON");
     }
   if (distance_2 <= 3){
@@ -198,7 +198,7 @@ void loop() {
   if (distance_3 > 8){
     digitalWrite(rele_3, 0);
     lcd.setCursor(0,1);
-    lcd.print("B3 ON");
+    lcd.print("B3 ON ");
    // SerialBT.print("Bomba_3_ON");
     }
   if (distance_3 <= 3){
